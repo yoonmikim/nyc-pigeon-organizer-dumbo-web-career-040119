@@ -4,7 +4,6 @@ def nyc_pigeon_organizer(data)
       h.each { |v, n|
         n.each { |i|
           o[i] ||= {}
-          o[i] ||= []
           (o[i][k] ||= []) << k.to_s
         }
       }
