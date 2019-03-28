@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
     data.each_with_object({}) { |(k,h),o| 
       h.each { |v, n|
         n.each { |i|
-    (o[v] ||= []) << k
+          (o[v] ||= []) << k
         }
       }
     }
